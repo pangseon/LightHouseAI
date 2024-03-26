@@ -3,6 +3,7 @@ package com.mju.lighthouseai.sample.service.impl;
 import com.mju.lighthouseai.sample.dto.service.TestCreateServiceRequestDto;
 import com.mju.lighthouseai.sample.dto.service.TestReadResponseDto;
 import com.mju.lighthouseai.sample.entity.Test;
+import com.mju.lighthouseai.sample.entity.User;
 import com.mju.lighthouseai.sample.exception.NotFoundTestException;
 import com.mju.lighthouseai.sample.exception.TestErrorCode;
 import com.mju.lighthouseai.sample.mapper.entity.TestEntityMapper;
@@ -10,10 +11,8 @@ import com.mju.lighthouseai.sample.repository.TestRepository;
 import com.mju.lighthouseai.sample.service.TestService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor

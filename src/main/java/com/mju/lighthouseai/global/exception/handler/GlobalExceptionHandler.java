@@ -1,12 +1,12 @@
 package com.mju.lighthouseai.global.exception.handler;
 
+import com.mju.lighthouseai.global.exception.CustomException;
+import com.mju.lighthouseai.global.exception.ErrorCode;
+import com.mju.lighthouseai.global.exception.dto.BeanValidationExceptionResponseDto;
+import com.mju.lighthouseai.global.exception.dto.CustomExceptionResponseDto;
+import com.mju.lighthouseai.global.exception.dto.FieldErrorResponseDto;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
-import org.springeel.oneclickrecipe.global.exception.CustomException;
-import org.springeel.oneclickrecipe.global.exception.ErrorCode;
-import org.springeel.oneclickrecipe.global.exception.dto.BeanValidationExceptionResponseDto;
-import org.springeel.oneclickrecipe.global.exception.dto.CustomExceptionResponseDto;
-import org.springeel.oneclickrecipe.global.exception.dto.FieldErrorResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
